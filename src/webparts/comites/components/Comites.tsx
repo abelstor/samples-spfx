@@ -1,14 +1,17 @@
 import * as React from 'react';
-import { AppComites } from '@/AppComites';
-import { IComitesProps } from './IComitesProps';
 import { SPComponentLoader } from '@microsoft/sp-loader';
+
+import { IComitesProps } from './IComitesProps';
+import { AppRouter } from '@/router';
 
 SPComponentLoader.loadCss('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 
 const Comites: React.FC<IComitesProps> = (props) => {
 
   return (
-    <AppComites {...props} />
+    <div className="comites" id="workbenchPageContent">
+      <AppRouter {...props} />
+    </div>
   )
 };
 
