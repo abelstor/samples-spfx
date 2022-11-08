@@ -1,6 +1,7 @@
-import { getSP } from '@/utils';
-import { WebPartContext } from '@microsoft/sp-webpart-base';
 import { useEffect, useState } from 'react';
+import { WebPartContext } from '@microsoft/sp-webpart-base';
+
+import { getSP } from '@/utils';
 
 export const useList = (listName: string, context: WebPartContext): [any[], boolean] => {
     const [items, setItems] = useState<any[]>([]);

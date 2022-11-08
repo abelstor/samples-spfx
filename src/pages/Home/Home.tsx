@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-export interface HomeInterface {}
+export interface HomeInterface { }
 
-const Home: React.FC<HomeInterface> = (props) => {
+const Home: React.FC<HomeInterface> = () => {
 
 	return (
 		<>

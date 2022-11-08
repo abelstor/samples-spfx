@@ -13,14 +13,14 @@ export interface AppRouterInterface {
 const AppRouter: React.FC<AppRouterInterface> = (props) => {
 
     return (
-    <Router basename="/">
-        <NavBar/>
-        <Routes>
-            <Route path="/" element={<Home {...props} />} />
-            <Route path="about" element={<About {...props} />} />
-            <Route path="/matriz" element={<Matriz {...props} />} />
-        </Routes>
-    </Router>
+        <Router basename="/">
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="matriz" element={<Matriz {...props} />} />
+            </Routes>
+        </Router>
     )
 };
 
