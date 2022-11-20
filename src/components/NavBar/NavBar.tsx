@@ -5,7 +5,7 @@ export interface NavBarInterface { }
 
 const NavBar: React.FC<NavBarInterface> = () => {
 	return (
-		<nav className="navbar-expand-lg navbar-dark bg-dark">
+		<nav className="navbar-expand-lg navbar-dark bg-dark" style={{ marginBottom: "24px" }}>
 
 			<div className="collapse navbar-collapse" id="navbarNav">
 				<ul className="navbar-nav justify-content-between">
